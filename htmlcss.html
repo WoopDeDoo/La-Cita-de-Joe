@@ -29,9 +29,10 @@
                 <br>
         <h4>February 22, 2021</h2>
             <h2>Introduction to HTML5 Elements</h2>
+                <ul><li>
                 <h3>Descriptive Header Tags:</h3>
-                <p>main, header, footer, nav, video, article, and section</p>
-                <br>
+                <p>main, header, footer, nav, video, article, and section
+                </p></li></ul><br>
             <h2>Add Images to Your Website</h2>
                 <p>&lt;img src="image source"><br>
                 Image sources must include an alt attribute<br>
@@ -39,12 +40,24 @@
                 <br>
             <h2>Link to External Pages with Anchor Elements</h2>
                 <p>AKA Hyperlinks and such<br>
-                    [less than] href="source"> this leads to a source.org [less than]/a> <br>
+                    &lt;href="source"> this leads to a source.org &lt;/a> <br>
                 </p>
-                <h3>Link to Internal Sections of a Page with Anchor Elements</h3>
+                <ul>
+                <li><h3>Link to Internal Sections of a Page with Anchor Elements</h3>
                 <p>Must assign a link's href attribute to a hash symbool plus<br>
-                    the value of the id attribute for the linking element<br>
-                    &lt;a href="contacts header">Contacts<\a></p>
+                    the value of the id attribute for the linking element:<br><br>
+                    &lt;a href="#contacts-header">Contacts&lt;\a><br>
+                    ...<br>
+                    &lt;h2 id="contacts-header">Contacts&lt;\h2><br><br>
+                    When users click the Contacts link, they'll be taken to the section of <br>
+                    the webpage with the Contacts header element.<br>
+                    </p></li>
+                <li><h3>Nest an Anchor Element within a Paragraph</h3>
+                <p>
+                    &lt;p><br>
+                    &emsp;Here's a &lt;a target="_blank" href="http://freecodecamp.org"> link to freecodecamp.org&lt;/a> for you to follow.<br>
+                    &lt;p><br>
+                </p></li></ul>
                 <br>
     </body>
 </html>
