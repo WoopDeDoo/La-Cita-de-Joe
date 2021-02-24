@@ -162,7 +162,26 @@
                         &lt;input type="text" required>
                     </p></li>
                     <li><p><b>Create a Set of Radio Buttons</b><br>
-                    </p></li>                    
+                        Each of the radio buttons is listed by a label element.<br>
+                        Wrapping an input element within a label element creates an <br>
+                        association between the radio button and the label. All <br>
+                        related radio buttons should have the same name attribute. <br>
+                        &lt;example> <br>
+                        &emsp;&lt;input type="radio" name="exampleset"> Example<br>
+                        &lt;/label><br>
+                        <label for="example">
+                            <input id="example" type="radio" name="exampleset"> Example <br>
+                        </label>
+                        It's best practice to set a for attribute on the label element<br>
+                        with a a value that matches the value of the id attribute.<br>
+                        This allows "assistive technologies" create a linked relationship<br>
+                        between the label and child input element<br>
+                        &lt;label for="indoor"> <br>
+                        &emsp;&lt;input id="indoor" type="radio" name="indoor-outdoor">Indoor<br>
+                        &lt;/label><br>
+                    </p></li>          
+                    <li><p><b>Create a Set of Checkboxes</b><br>
+                    </li></p>          
                 </ol>
     </body>
 </html>
