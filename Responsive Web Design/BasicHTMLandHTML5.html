@@ -105,7 +105,8 @@
                 <li><h3>Nest an Anchor Element within a Paragraph</h3>
                 <p>
                     &lt;p><br>
-                    &emsp;Here's a &lt;a target="_blank" href="http://freecodecamp.org"> link to freecodecamp.org&lt;/a> for you to follow.<br>
+                    &emsp;Here's a &lt;a target="_blank" href="http://freecodecamp.org"><br>
+                    &emsp;link to freecodecamp.org&lt;/a> for you to follow.<br>
                     &lt;p><br>
                 </p></li></ul>
                 <br>
@@ -196,13 +197,42 @@
                         &lt;/label><br>
                         <label for="1"><input id="1" type="checkbox" name="choices">1</label><br>
                         <label for="2"><input id="2" type="checkbox" name="choices">2</label><br>
-                    </li></p>          
+                    </li></p>        
+
         <h4><a id="4"></a>February 24, 2021</a></h4>
-                    <li><p>Use the value attribute with Radio Buttons and Checkboxes<br>
-                        using a specified action attribute.<br>
-                        &lt;form action="url"><br>
-                        &emsp;&lt;input><br>
-                        &lt;/form><br>
-        </ol>
+                    <li><p><b>Use the value attribute with Radio Buttons and Checkboxes using</b><br>
+                        a specified action attribute.<br>
+                        If you don't use the value attribute, the input returns indoor-outdoor=on<br>
+                        If you do use value attribute, the input returns indoor-outdoor=indoor<br>
+                        &lt;input id="indoor" value="indoor" type="checkbox" name="indoor-outdoor"><br>
+                    </p></li>
+                    <li><p><b>Check Radio Buttons and Checkboxes by Default</b><br>
+                        An attribute similar to required. If used, the option is <br>
+                        selected by default.<br>
+                        &lt;label for="2">&lt;input id="2" type="checkbox" name="choices" checked>2&lt;/label><br>
+                        <label for="2"><input id="2" type="checkbox" name="choices" checked>2</label><br>
+                    </p></li>
+                </ol>
+            <h2>Nest Many Elements within a Single div Element</h2>
+                <p>
+                    div aka division element is a "general purpose container" for other elements. <br>
+                    "It helps us to separate out data in the web page and we can create a <br>
+                    particular section for particular data or function in the web pages"<br>
+                    "is to apply CSS and web layout on them"<br>
+                    &lt;div>&lt;/div><br>
+                    Maybe I could've used it to clean up my code drastically, shortening it from 200+ lines<br>
+                </p>
+            <h2>Declare the Doctype of an HTML Document</h2>
+                <p>This element should be included in every HTML doc. You need to tell which <br>
+                    version of HTML is being used for the page. <br>
+                    &lt;!DOCTYPE ...> e.g  &lt;!DOCTYPE html> <br>
+                    html is not case sensitive <br>
+                    Then you need to wrap the entire code with  &lt;html> &lt;/html>
+                </p>
+            <h2>Define the Head and Body of an HTML Document</h2>
+                <p>You can organize HTML with tags like head & body.<br>
+                    Metadata elements like &lt;link>, &lt;meta>, &lt;title>, and &lt;style><br>
+                    usually are kept within the &lt;head> element.
+                </p>
     </body>
 </html>
