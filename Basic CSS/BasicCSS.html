@@ -6,10 +6,11 @@
         </h1>
     </header>
     <body>
+    <div><!--Table of Contents-->
     <h1>Basic CSS</h1>
-    <p>CSS, or Cascading Style Sheets, tell the browser how to display the text 
+    <p>"CSS, or Cascading Style Sheets, tell the browser how to display the text 
         and other content that you write in HTML. With CSS, you can control the
-        color, font, size, spacing, and many other aspects of HTML elements.</p>
+        color, font, size, spacing, and many other aspects of HTML elements."</p>
 	<h3>Table of Contents</h3><ol>
             <p><I>Italics</I> means unlisted</p>
             <li><a href="#1">March 14, 2021</a>
@@ -64,8 +65,44 @@
                         
                 </ul>
             </ol></ul>
-
+    </div>
+    <div><!--Mar 14, 2021-->
         <h4><a id="1">March 14,  2021</a></h4>
-
+            <h2>Change the Color of Text</h2>
+                <p>Style attribute of an element<br>
+                e.g &lt;h2 style="color: blue;"> Example&lt;/h2>
+                <h2 style="color: blue;">Example</h2>
+                It's good practice to end inline style declarations with a ;
+                </p>
+                <p style="font-size:small;"> or at least thats what freeCodeCamp says
+                and I still don't know how to modify whitespace or margins yet</p>
+        
+            <h2>Use CSS Selectors to Style Elements</h2>
+                <p>Create style blocks to make CSS selectors for specific elements
+                    so you dont have to use the style attribute frequently<br>
+                    &lt;style> <br>
+                    &emsp;h2{ <br>
+                        &emsp;&emsp;color: red; <br>
+                        &emsp;}<br>
+                    &lt;/style>
+                </p>
+            <h2>Use a CSS Class to Style an Element</h2>
+                <p>Classes are reusable styles that can be added to html elements
+                    and start with a <b>.</b> (period) <br>
+                &lt;style> <br>
+                <b>&emsp;.blue-text</b> { (bolded for emphasis on class)<br>
+                    &emsp;&emsp;color: blue; <br>
+                    &emsp;}<br>
+                &lt;/style> <br>
+                Add a class attribute to apply style on elements/objects <br>
+                &lt;h2 class="blue-text">Example&lt;h2><br></p>
+                <!--example for class setup-->
+                <style>
+                    .example-blue-text {
+                        color: blue;
+                    }
+                </style>
+                <h2 class="example-blue-text">Example blue text in sourcecode</h2>
+    </div>
     </body>
 </html>
