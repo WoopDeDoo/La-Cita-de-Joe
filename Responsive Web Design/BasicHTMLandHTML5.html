@@ -6,6 +6,7 @@
         </h1>
     </header>
     <body>
+    <hr>
     <div> <!--Table of Contents-->
         <h1>Responsive Web Design</h1>
         <p> "HTML is a markup language that uses a special syntax or notation to 
@@ -13,6 +14,7 @@
             usually have opening and closing tags that surround and give meaning 
             to content. For example, different elements can describe text as a 
             heading, paragraph, or list item."</p>
+    <hr>
         <h3>Table of Contents</h3><ol>
             <p><I>Italics</I> means unlisted</p>
             <li><a href="#1">February 21, 2021</a>
@@ -61,6 +63,7 @@
                 </ul>
             </ol></ul>
     </div>
+    <hr>
     <div><!--Feb 21, 2020-->
         <h4><a id="1">February 21, 2021</a></h4>
             <h2>Say Hello to HTML Elements</h2>
@@ -84,6 +87,7 @@
                 &lt;!-- i am a comment --> <br>
                 <br>
     </div>
+    <hr>
     <div><!--Feb 22, 2021-->
         <h4><a id="2"></a>February 22, 2021</a></h4>
             <h2>Introduction to HTML5 Elements</h2>
@@ -119,6 +123,7 @@
                 </p></li></ul>
                 <br>
     </div>
+    <hr>
     <div><!--Feb 23, 2021-->
         <h4><a id="3"></a>February 23, 2021</a></h4>
             <h2>Create a Bulleted Unordered List</h2>
@@ -128,7 +133,6 @@
                     &emsp;&lt;li> two&lt;/li> <br>
                     &emsp;&lt;li> three&lt;/li> <br>
                     &lt;/ul> <br>
-                    --->
                     <ul>
                         <li>one</li>
                         <li>two</li>
@@ -142,7 +146,6 @@
                     &emsp;&lt;li> two&lt;/li> <br>
                     &emsp;&lt;li> three&lt;/li> <br>
                     &lt;/ol> <br>
-                    --->
                     <ol>
                         <li>one</li>
                         <li>two</li>
@@ -152,44 +155,58 @@
             <h2>Create a Text Field</h2>
                 <p>input elements get input from user <br>
                     &lt;input type="text"><br>
+                    <br>
                     <input type="text"> <br>
+                    <br>
                     Surprisingly, when you go through potential types<br>
                     there are a lot of inputs like color, date, or submit<br>
                     Additionally, there's more attributes to input like <br>
                     placeholder.<br>
                 </p>
+            
+            <h2>Add Placeholder Text to a Text Field</h2>
+                <p>Simple placeholder text<br>
+                &lt; input type="text" placeholder="Placeholder text goes in here"> <br>
+                <br>
+                <input type="text" placeholder="Placeholder text goes in here">
+                </p>
             <h2>Create a Form Element</h2>
                 <ol>
                     <li><p>Create a form element to submit data to the server<br>
                         using a specified action attribute.<br>
+                        <br>
                         &lt;form action="url"><br>
                         &emsp;&lt;input><br>
                         &lt;/form><br>
                     </p></li>
                     <li><p><b>Add a Submit Button to the Form</b><br>
                         &lt;button type="submit">this button submits&lt;/button><br>
+                        <br>
                         <button type="submit">this button submits</button>
                     </p></li>
                     <li><p><b>Use HTML5 to Require a Field</b><br>
                         Require specific form fields so users have to fill<br>
                         in the form to submit. <br>
+                        <br>
                         &lt;input type="text" required>
                     </p></li>
                     <li><p><b>Create a Set of Radio Buttons</b><br>
                         Each of the radio buttons is listed by a label element.<br>
                         Wrapping an input element within a label element creates an <br>
                         association between the radio button and the label. All <br>
-                        related radio buttons should have the same name attribute. <br>
+                        related radio buttons should have the same name attribute. <br><br>
                         &lt;example> <br>
                         &emsp;&lt;input type="radio" name="exampleset"> Example<br>
                         &lt;/label><br>
+                        <br>
                         <label for="example">
                             <input id="example" type="radio" name="exampleset"> Example <br>
-                        </label>
+                        </label><br>
                         It's best practice to set a for attribute on the label element<br>
                         with a a value that matches the value of the id attribute.<br>
                         This allows "assistive technologies" create a linked relationship<br>
                         between the label and child input element<br>
+                        <br>
                         &lt;label for="indoor"> <br>
                         &emsp;&lt;input id="indoor" type="radio" name="indoor-outdoor">Indoor<br>
                         &lt;/label><br>
@@ -197,29 +214,34 @@
                     <li><p><b>Create a Set of Checkboxes</b><br>
                         Similar to Radio Buttons, checkboxes act like true/false inputs.<br>
                         Additionally, it's best practice to identify the label with the<br>
-                        input with a for attribute.<br>
+                        input with a for attribute.<br><br>
                         &lt;label for="1"> <br>
                         &emsp;&lt;input id="1" type="checkbox" name="choices">1<br>
                         &lt;/label><br>
                         &lt;label for="2"> <br>
                         &emsp;&lt;input id="2" type="checkbox" name="choices">2<br>
                         &lt;/label><br>
+                         <br>
                         <label for="1"><input id="1" type="checkbox" name="choices">1</label><br>
                         <label for="2"><input id="2" type="checkbox" name="choices">2</label><br>
                     </li></p>        
     </div>
+    <hr>
     <div><!--Feb 24, 2021-->
         <h4><a id="4"></a>February 24, 2021</a></h4>
                     <li><p><b>Use the value attribute with Radio Buttons and Checkboxes using</b><br>
                         a specified action attribute.<br>
                         If you don't use the value attribute, the input returns indoor-outdoor=on<br>
                         If you do use value attribute, the input returns indoor-outdoor=indoor<br>
+                        <br>
                         &lt;input id="indoor" value="indoor" type="checkbox" name="indoor-outdoor"><br>
                     </p></li>
                     <li><p><b>Check Radio Buttons and Checkboxes by Default</b><br>
                         An attribute similar to required. If used, the option is <br>
                         selected by default.<br>
+                        <br>
                         &lt;label for="2">&lt;input id="2" type="checkbox" name="choices" checked>2&lt;/label><br>
+                        <br>
                         <label for="2"><input id="2" type="checkbox" name="choices" checked>2</label><br>
                     </p></li>
                 </ol>
@@ -229,7 +251,9 @@
                     "It helps us to separate out data in the web page and we can create a <br>
                     particular section for particular data or function in the web pages"<br>
                     "is to apply CSS and web layout on them"<br>
+                    <br>
                     &lt;div>&lt;/div><br>
+                    <br>
                     Maybe I could've used it to clean up my code drastically, shortening it from 200+ lines<br>
                 </p>
             <h2>Declare the Doctype of an HTML Document</h2>
@@ -237,7 +261,16 @@
                     version of HTML is being used for the page. <br>
                     &lt;!DOCTYPE ...> e.g  &lt;!DOCTYPE html> <br>
                     html is not case sensitive <br>
-                    Then you need to wrap the entire code with  &lt;html> &lt;/html>
+                    Then you need to wrap the entire code with  &lt;html> &lt;/html><br>
+                    <br>
+                    &lt;!DOCTYPE html><br>
+                    &emsp;&lt;html><br>
+                    &emsp;&emsp;&lt;body><br>
+                    &emsp;&emsp;&emsp;Content goes here<br>
+                    &emsp;&emsp;&lt;/body><br>
+                    &emsp;&lt;/html><br>
+
+
                 </p>
             <h2>Define the Head and Body of an HTML Document</h2>
                 <p>You can organize HTML with tags like head & body.<br>
@@ -245,5 +278,11 @@
                     usually are kept within the &lt;head> element.
                 </p>
     </div>
+    <hr>
     </body>
+    <footer>
+        <h1>
+            <a href="../index.html">Back</a>
+        </h1>
+    </footer>
 </html>

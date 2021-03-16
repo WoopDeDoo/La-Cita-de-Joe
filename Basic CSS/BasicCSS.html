@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang=en>
+    <head>
+        <link rel="stylesheet" href="BasicCSS.css">
+    </head>
     <header>
         <h1>
             <a href="../index.html">Back</a>
         </h1>
     </header>
     <body>
-    <div><!--Table of Contents-->
+    <div class="divisionborders"><!--Table of Contents-->
     <h1>Basic CSS</h1>
     <p>"CSS, or Cascading Style Sheets, tell the browser how to display the text 
         and other content that you write in HTML. With CSS, you can control the
@@ -71,8 +74,10 @@
                 </ul>
             </ol></ul>
     </div>
-    <div><!--Mar 14, 2021-->
+
+    <div class="divisionborders"><!--Mar 14, 2021-->
         <h4><a id="1">March 14,  2021</a></h4>
+            <div class="sectionborders">
             <h2>Change the Color of Text</h2>
                 <p>Style attribute of an element<br>
                 e.g &lt;h2 style="color: blue;"> Example&lt;/h2>
@@ -81,7 +86,9 @@
                 </p>
                 <p style="font-size:small;"> or at least thats what freeCodeCamp says
                 and I still don't know how to modify whitespace or margins yet</p>
-        
+            </div>
+
+            <div class="sectionborders">
             <h2>Use CSS Selectors to Style Elements</h2>
                 <p>Create style blocks to make CSS selectors for specific elements
                     so you dont have to use the style attribute frequently<br>
@@ -91,6 +98,9 @@
                         &emsp;}<br>
                     &lt;/style>
                 </p>
+            </div>
+
+            <div class="sectionborders">
             <h2>Use a CSS Class to Style an Element</h2>
                 <p>Classes are reusable styles that can be added to html elements
                     and start with a <b>.</b> (period) <br>
@@ -108,19 +118,25 @@
                     }
                 </style>
                 <h2 class="example-blue-text">Example blue text in sourcecode</h2>
+                </div>
     </div>
-    <div><!--March 15, 2021-->
+
+    <div class="divisionborders"> <!--March 15, 2021-->
         <h4><a id="2">March 15, 2021</a></h4>
-            <h2>Change the Font Size of an Element</h2>
-                <p>There are multiple attributes you can assign to a class
-                style element. For example</p>
-                <p>
-                    h1 {<br>
-                    &emsp;font-size: 30px;<br>
-                    }<br>
-                </p>
-                <p>can change the font size. <br>
-                However, you can also change fonts, colors, styles, etc. </p>
+            <div class="sectionborders">
+                <h2>Change the Font Size of an Element</h2>
+                    <p>There are multiple attributes you can assign to a class
+                    style element. For example</p>
+                    <p>
+                        h1 {<br>
+                        &emsp;font-size: 30px;<br>
+                        }<br>
+                    </p>
+                    <p>can change the font size. <br>
+                    However, you can also change fonts, colors, styles, etc. </p>
+            </div>
+        
+            <div class="sectionborders">
             <h2>Import a Google Font</h2>
                 <p>Google has a large font library, so why not use it? <br>
                 "lol (if Google is blocked in your country, you will need to skip this
@@ -134,29 +150,39 @@
                     }</li>
                 </ol>
                 </p>
+            </div>
+        
+            <div class="sectionborders">
             <h2>Specify How Fonts Should Degrade</h2>
                 <p>If a custom font is not avalible to a browser, you need to be able to
-                degrade it so that it displays correctly.
+                degrade it so that it displays correctly.</p>
                 <p>h1 {<br>
                     &emsp;font-family:" Syne Mono, monospace;"<br>
                 }<br>
-                sample code becomes
+                sample code becomes</p>
                 <link href ="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
                 <p style= "font-family: Syne Mono, monospace;">Example text (Syne Mono) with degrade of 
                 monospace should Syne Mono not be reached.</p>
+            </div>
+            
+            <div class="sectionborders">
             <h2>Size Your Images</h2>
                 <p>CSS has a property called width that controlls an elmenets with.
                 This property can be modified with px. Create classes with this 
                 attribute to control element sizes.</p>
-    <div><!--March 16, 2021-->
+            </div>
+    </div>
+    <div class="divisionborders"><!--March 16, 2021-->
         <h4><a id="3">March 16, 2021</a></h4>
-            <h2>Add Borders Around Your ELements</h2>
+        <div class="sectionborders">
+            <h2>Add Borders Around Your Elements</h2>
                 <p>CSS has properties like style, color, and width.<br>
                     &lt;style> <br>
                     &emsp;.thin-red-border {<br>
                         &emsp;&emsp;border-color: red; <br>
                         &emsp;&emsp;border-width: 5px; <br>
                         &emsp;&emsp;border-style: solid;<br>
+                        &emsp;&emsp;<b>width: 85px;</b> Also useful, limits the length of paragraphs<br>
                     &emsp;}<Br>
                     &lt;/style><br>
                 <style>
@@ -164,6 +190,7 @@
                         border-color: red;
                         border-style: dotted;
                         border-width: 5px;
+                        width: 85px;
                     }
                 </style>
                 </p>
@@ -172,7 +199,7 @@
                     inbetween one class and anohter.<br>
                     &lt;p class="red-text another-class">
                 </p>
-
+        </div>
     </div>
 
 
