@@ -22,14 +22,14 @@
             <li><a href="#2">March 15, 2021</a></li>
                 <ul>
                     <li><i>Style Multiple Elements with a CSS Class</i></li>
-                </ul>
-            <li>TODO</li>
-                <ul>
                     <li>Change the Font Size of the Element</li>
                     <li><i>Set the Font Familiy of an Element</i></li>
                     <li>Import a Google Font</li>
                     <li>Specify How Fonts Should Degrade</li>
                     <li>Size Your Images</li>
+                </ul>
+            <li>TODO</li>
+                <ul>
                     <li>Add Borders Around Your Elements</li>
                     <li>Add Rounded Corners with border-radius</li>
                     <li>Give a Background Color to a div Element</li>
@@ -118,9 +118,32 @@
                 </p>
                 <p>can change the font size. <br>
                 However, you can also change fonts, colors, styles, etc. </p>
+            <h2>Import a Google Font</h2>
+                <p>Google has a large font library, so why not use it? <br>
+                "lol (if Google is blocked in your country, you will need to skip this
+                challenge)."<br>
+                <ol>
+                    <li>Copy font's URL and reference it in HTML<br>
+                    &lt;link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"></li>
+                    <li>Simply reference the font by its family name.<br>
+                    h1 {<br>
+                        &emsp;font-family: Lobster<br>
+                    }</li>
+                </ol>
+                </p>
+            <h2>Specify How Fonts Should Degrade</h2>
+                <p>If a custom font is not avalible to a browser, you need to be able to
+                degrade it so that it displays correctly.
+                <link href ="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+                <p style= "font-family: Syne Mono, monospace;">Example text (Syne Mono) with degrade of Mono</p>
+            <h2>Size Your Images</h2>
+                <p>CSS has a property called width that controlls an elmenets with.
+                This property can be modified with px. Create classes with this 
+                attribute to control element sizes.</p>
+                
 
 
-
+            
     </div>
     </body>
 </html>
