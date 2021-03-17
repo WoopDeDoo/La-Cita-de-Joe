@@ -1,5 +1,4 @@
 /* For BasicCSS.html */
-@import "https://cdn.rawgit.com/google/code-prettify/master/styles/desert.css";
 .divisionborders {
         border-color: black;
         border-style: solid;
@@ -18,7 +17,6 @@
 }
 
 code {
-    color: #000000;
     font-family: Consolas;
     font-size: 16px;
     text-align: left;
