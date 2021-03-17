@@ -38,12 +38,16 @@
                 <ul>
                     <li>Add Borders Around Your Elements</li>
                 </ul>
-            <li>TODO</li>
+            <li><a href="#4">March 17, 2021</a></li>
                 <ul>
                     <li>Add Rounded Corners with border-radius</li>
+                    <li><i>Make Circular Images with a border-radius</i></li>
                     <li>Give a Background Color to a div Element</li>
                     <li>Set the id of an Element</li>
                     <li>Use an id Attribute to Style an Element</li>
+                </ul>
+            <li>TODO</li>
+                <ul>
                     <li>Adjust the Padding of an Element</li>
                     <li>Adjust the Margin of an Element</li>
                     <li>Add a Negative Margin to an Element</li>
@@ -194,15 +198,85 @@
                 </style>
                 </p>
                 <p class="thin-red-border">Sample Text</p>
-                <p>You can add multiple classes to a css style by adding a space
-                    inbetween one class and anohter.<br>
-                    &lt;p class="red-text another-class">
-                </p>
+                <p><b><i>You can add multiple classes to a css style by adding a space
+                    inbetween two classes.</i></b></p>
+                    <pre><code>&lt;p class="red-text anotherclassname"></code></pre>
         </div>
     </div>
 
+    <div class="divisionborders"><!--March 17, 2021-->
+        <h4><a id="4">March 17, 2021</a></h4>
+        <div class="sectionborders">
+            <h2>Add Rounded Corners with border-radius</h2>
+                <p>Add the attribute border-radius to round corners</p>
+<pre><code>.borderradius {
+    border-radius: 13px;
+    border-style: solid;
+    border-width: 5px;
+    width: 100px;
+}</code></pre>
+                <style>
+                    .borderradiuss{
+                        border-radius: 100px;
+                        border-style: solid;
+                        border-width: 5px;
+                        width: 100px;
+                    }
+                </style>
+            <p class="borderradiuss">Border example</p>
+        </div>
 
-            
+        <div class="sectionborders">
+            <h2>Give a Background Color to a div Element</h2>
+                <p>Adds a background color</p>
+<pre><code>.backgroundcolor {
+    background-color: green;
+    color: white;
+    border-width: 5px;
+    width: 20%;
+}</code></pre>
+                <style>
+                    .backgroundcolor{
+                        background-color: green;
+                        color:white;
+                        border-width: 5px;
+                        width: 20%;
+                    }
+                </style>
+            <p class="backgroundcolor">The COLOR GREEN</p>
+        </div>
+
+        <div class="sectionborders">
+            <h2>Set the id of an Element</h2>
+                <p>id attributes can be used to style a single element.<br>
+                (However, later they can be used to select and modify specific
+                elements in JavaScript)<br>
+                id attributes should be unique (Browsers won't enforce this) and
+                it's good practice not giving more than one element the same attribute.
+                (freeCodeCamp)</p>
+                <pre><code>&lt;p id="somerandomid"></code></pre>
+        </div>
+
+        <div class="sectionborders">
+            <h2>Use an id Attribute to Style an Element</h2>
+                <p>How to setup styles for id Attributes.<br>
+                id Attributes use "#" for css</p>
+                <pre><code>#exampleid {
+    background-color: purple;
+    color: white;
+    border-width: 5px;
+    width: 20%;
+}</code></pre>
+                <style>
+                    #exampleid {
+                        background-color: purple;
+                        color: white;
+                        border-width: 5px;
+                        width: 20%;
+                    }
+                </style>
+            <p id="exampleid">ExampleID</p>
+        </div>
     </div>
     </body>
 </html>
