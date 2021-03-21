@@ -46,13 +46,17 @@
                         <li>Set the id of an Element</li>
                         <li>Use an id Attribute to Style an Element</li>
                     </ul>
-                <li>TODO</li>
+                <p><b>...</b></p>
+                <li><a href="#5">March 21, 2021</a></li>
                     <ul>
                         <li>Adjust the Padding of an Element</li>
                         <li>Adjust the Margin of an Element</li>
                         <li>Add a Negative Margin to an Element</li>
-                        <li>Add Different Padding to Each Side of an Element</li>
-                        <li>Add Different Margins to Each Side of an Element</li>
+                        <li><i>Add Different Padding to Each Side of an Element</i></li>
+                        <li><i>Add Different Margins to Each Side of an Element</i></li>
+                    </ul>
+                <li>TODO</li>
+                    <ul>
                         <li>Use Clockwise Notation to Specify the Padding of an Element</li>
                         <li>Use Clockwise Notation to Specify the Margin of an Element</li>
                         <li>Use Attribute Selectors to Style Elements</li>
@@ -323,6 +327,266 @@
                         }
                     </style>
                 <p id="exampleid">ExampleID</p>
+            </div>
+        </div>
+        <p style="text-align: center; font-weight: bold;">...</p> <!--Missing-->
+        <div class="divisionborders"><!--March 21, 2021-->
+            <h4><a id="5">March 21, 2021</a></h4>
+            <div class="sectionborders">
+                <h2>Adjust the Padding of an Element</h2>
+                    <p>HTML elements are like little rectangles whose properties
+                    are dictated by the <u>padding, border,</u> and <u>margin</u> elements.<br>
+                    <i>Padding</i> controls the amount of space between an element's <b>content</b>
+                    and <b>border</b>.</p>
+                <table>
+                    <td class="gutter">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36</td>
+                    <td class="codeformat">
+<pre><code>&lt;!--Taken from freeCodeCamp-->
+&lt;style>
+    .injected-text {
+        margin-bottom: -25px;
+        text-align: center;
+    }
+      
+    .box {
+        border-style: solid;
+        border-color: black;
+        border-width: 5px;
+        text-align: center;
+    }
+      
+    .yellow-box {
+        background-color: yellow;
+        <b>padding: 10px;</b>
+    }
+    
+    .red-box {
+        background-color: crimson;
+        color: #fff;
+        <b>padding: 20px;</b>
+    }
+    
+    .blue-box {
+        background-color: blue;
+        color: #fff;
+        <b>padding: 20px;<b>
+    }
+&lt;/style>
+&lt;h5 class="injected-text">margin&lt;/h5>
+&lt;div class="box yellow-box">
+    &lt;h5 class="box red-box">padding&lt;/h5>
+    &lt;h5 class="box blue-box">padding&lt;/h5>
+&lt;/div></code></pre></td>
+                    <td style="padding: 10px;"><style>
+                        .injected-text {
+                            margin-bottom: -25px;
+                            text-align: center;
+                        }
+                        
+                        .box {
+                            border-style: solid;
+                            border-color: black;
+                            border-width: 5px;
+                            text-align: center;
+                        }
+                        
+                        .yellow-box0 {
+                            background-color: yellow;
+                        }
+                        
+                        .red-box0 {
+                            background-color: crimson;
+                            color: #fff;
+                        }
+                        
+                        .blue-box0 {
+                            background-color: blue;
+                            color: #fff;
+                        }
+                    </style>
+                    <p style="text-align: center;">Without Padding</p>
+                    <h5 class="injected-text">margin</h5>
+                    <div class="box yellow-box0">
+                    <h5 class="box red-box0">padding</h5>
+                    <h5 class="box blue-box0">padding</h5></td>
+                    <td style="padding: 10px;"><style>
+                        .yellow-box1 {
+                            background-color: yellow;
+                            padding: 10px;
+                        }
+                        
+                        .red-box1 {
+                            background-color: crimson;
+                            color: #fff;
+                            padding: 20px;
+                        }
+                        
+                        .blue-box1 {
+                            background-color: blue;
+                            color: #fff;
+                            padding: 20px;
+                        }
+                    </style>
+                    <p style="text-align: center;">With Padding</p>
+                    <h5 class="injected-text">margin</h5>
+                    <div class="box yellow-box1">
+                        <h5 class="box red-box1">padding</h5>
+                        <h5 class="box blue-box1">padding</h5></td>
+                    </div>
+                </table>
+                <p> Additionally, you can individually adjust padding of each side by
+                    specfiying a direction:</p>
+                <table>
+                    <td class="gutter">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</td>
+                    <td class="codeformat">
+<pre><code>/*Snippet of previous code*/
+.red-box {
+    background-color: crimson;
+    color: #fff;
+    <b>padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;</b>
+}</code></pre></td>
+                <td style="padding: 10px;"><style>
+                    .red-box4{
+                        background-color: crimson;
+                        color: #fff;
+                        padding-top: 40px;
+                        padding-right: 20px;
+                        padding-bottom: 20px;
+                        padding-left: 40px;
+                    }
+                </style>
+                <h5 class="injected-text">margin</h5>
+                    <div class="box yellow-box1">
+                        <h5 class="box red-box4">padding</h5>
+                    </div></td>
+                </table>
+            </div>
+
+            <div class="sectionborders">
+                <h2>Adjust the Margin of an Element</h2>
+                    <p><i>Margin</i> controls the amount of space between an element's <b>border</b> and
+                    <b>surrounding elements</b>.</p>
+                <table>
+                    <td class="gutter">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14</td>
+                    <td class="codeformat">
+<pre><code>/*Snippet of previous code*/
+.red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+    <b>margin: 20px;</b>
+}
+
+.blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+    <b>margin: 20px;</b>
+}
+</code></pre></td>
+                    <td style="padding: 10px;"><style>
+                        .red-box2 {
+                            background-color: crimson;
+                            color: #fff;
+                            padding: 20px;
+                            margin: 30px;
+                        }
+                        
+                        .blue-box2 {
+                            background-color: blue;
+                            color: #fff;
+                            padding: 20px;
+                            margin: 30px;
+                        }
+                    </style>
+                    <p style="text-align: center;">With Margins</p>
+                    <h5 class="injected-text">margin</h5>
+                    <div class="box yellow-box1">
+                        <h5 class="box red-box2">padding</h5>
+                        <h5 class="box blue-box2">padding</h5></td>
+                    </div>
+                </table>
+                <p>Similar to padding, you can individually adjust each margin side</p>
+                <table>
+                    <td class="gutter">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</td>
+                    <td class="codeformat">
+<pre><code>/*Snippet of previous code*/
+.red-box {
+    background-color: crimson;
+    color: #fff;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}</code></pre></td>
+                <td style="padding: 10px;"><style>
+                    .red-box4{
+                        background-color: crimson;
+                        color: #fff;
+                        margin-top: 40px;
+                        margin-right: 20px;
+                        margin-bottom: 20px;
+                        margin-left: 40px;
+                    }
+                </style>
+                <h5 class="injected-text">margin</h5>
+                    <div class="box yellow-box1">
+                        <h5 class="box red-box4">padding</h5>
+                    </div></td>
+                </table>
+            </div>
+
+            <div class="sectionborders">
+                <h2>Add a Negative Margin to an Element</h2>
+                    <p>A negative margin will make elements grow larger</p>
+                <table>
+                    <td class="gutter">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14</td>
+                    <td class="codeformat">
+<pre><code>/*Snippet of previous code*/
+.red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+    <b>margin: -15px;</b>
+}
+
+.blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+    <b>margin: -15px;</b>
+}
+</code></pre></td>
+                    <td style="padding: 10px;"><style>
+                        .injected-text1 {
+                            position:fixed;
+                            text-align: center;
+                        }
+
+                        .red-box3 {
+                            background-color: crimson;
+                            color: #fff;
+                            padding: 20px;
+                            margin: -15px;
+                        }
+                        
+                        .blue-box3 {
+                            background-color: blue;
+                            color: #fff;
+                            padding: 20px;
+                            margin: -15px;
+                        }
+                    </style>
+                    <p style="text-align: center;">With Negative Margins</p>
+                    <h5 class="injected-text1">margin</h5>
+                    <div class="box yellow-box1">
+                        <h5 class="box red-box3">padding</h5>
+                        <h5 class="box blue-box3">padding</h5></td>
+                    </div>
+                </table>
             </div>
         </div>
     </body>
