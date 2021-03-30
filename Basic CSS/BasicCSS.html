@@ -55,12 +55,16 @@
                         <li><i>Add Different Padding to Each Side of an Element</i></li>
                         <li><i>Add Different Margins to Each Side of an Element</i></li>
                     </ul>
-                <li>TODO</li>
+                <p><b>...</b></p>
+                <li><a href="#6">March 30, 2021</a></li>
                     <ul>
                         <li>Use Clockwise Notation to Specify the Padding of an Element</li>
                         <li>Use Clockwise Notation to Specify the Margin of an Element</li>
                         <li>Use Attribute Selectors to Style Elements</li>
                         <li>Understand Absolute versus Relative Units</li>
+                    </ul>
+                <li>TODO</li>
+                    <ul>
                         <li>Style the HTML Body Element</li>
                         <li>Inherit Styles from the Body Element</li>
                         <li>Prioritize One Style Over Another</li>
@@ -329,7 +333,9 @@
                 <p id="exampleid">ExampleID</p>
             </div>
         </div>
+        
         <p style="text-align: center; font-weight: bold;">...</p> <!--Missing-->
+        
         <div class="divisionborders"><!--March 21, 2021-->
             <h4><a id="5">March 21, 2021</a></h4>
             <div class="sectionborders">
@@ -339,7 +345,7 @@
                     <i>Padding</i> controls the amount of space between an element's <b>content</b>
                     and <b>border</b>.</p>
                 <table>
-                    <td class="gutter">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36</td>
+                    <td class="gutter" style="text-align: center;">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36</td>
                     <td class="codeformat">
 <pre><code>&lt;!--Taken from freeCodeCamp-->
 &lt;style>
@@ -432,12 +438,11 @@
                     <div class="box yellow-box1">
                         <h5 class="box red-box1">padding</h5>
                         <h5 class="box blue-box1">padding</h5></td>
-                    </div>
                 </table>
                 <p> Additionally, you can individually adjust padding of each side by
                     specfiying a direction:</p>
                 <table>
-                    <td class="gutter">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</td>
+                    <td class="gutter" style="text-align: center;">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</td>
                     <td class="codeformat">
 <pre><code>/*Snippet of previous code*/
 .red-box {
@@ -466,12 +471,12 @@
             </div>
 
             <div class="sectionborders">
-                <h2>Adjust the Margin of an Element</h2>
-                    <p><i>Margin</i> controls the amount of space between an element's <b>border</b> and
-                    <b>surrounding elements</b>.</p>
-                <table>
-                    <td class="gutter">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14</td>
-                    <td class="codeformat">
+                    <h2>Adjust the Margin of an Element</h2>
+                        <p><i>Margin</i> controls the amount of space between an element's <b>border</b> and
+                        <b>surrounding elements</b>.</p>
+                    <table>
+                        <td class="gutter" style="text-align: center;">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14</td>
+                        <td class="codeformat">
 <pre><code>/*Snippet of previous code*/
 .red-box {
     background-color: crimson;
@@ -487,32 +492,31 @@
     <b>margin: 20px;</b>
 }
 </code></pre></td>
-                    <td style="padding: 10px;"><style>
-                        .red-box2 {
-                            background-color: crimson;
-                            color: #fff;
-                            padding: 20px;
-                            margin: 30px;
-                        }
-                        
-                        .blue-box2 {
-                            background-color: blue;
-                            color: #fff;
-                            padding: 20px;
-                            margin: 30px;
-                        }
-                    </style>
-                    <p style="text-align: center;">With Margins</p>
-                    <h5 class="injected-text">margin</h5>
-                    <div class="box yellow-box1">
-                        <h5 class="box red-box2">padding</h5>
-                        <h5 class="box blue-box2">padding</h5></td>
-                    </div>
-                </table>
-                <p>Similar to padding, you can individually adjust each margin side</p>
-                <table>
-                    <td class="gutter">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</td>
-                    <td class="codeformat">
+                        <td style="padding: 10px;"><style>
+                            .red-box2 {
+                                background-color: crimson;
+                                color: #fff;
+                                padding: 20px;
+                                margin: 30px;
+                            }
+                            
+                            .blue-box2 {
+                                background-color: blue;
+                                color: #fff;
+                                padding: 20px;
+                                margin: 30px;
+                            }
+                        </style>
+                        <p style="text-align: center;">With Margins</p>
+                        <h5 class="injected-text">margin</h5>
+                        <div class="box yellow-box1">
+                            <h5 class="box red-box2">padding</h5>
+                            <h5 class="box blue-box2">padding</h5></td>
+                    </table>
+                    <p>Similar to padding, you can individually adjust each margin side</p>
+                    <table>
+                        <td class="gutter" style="text-align: center;">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</td>
+                        <td class="codeformat">
 <pre><code>/*Snippet of previous code*/
 .red-box {
     background-color: crimson;
@@ -522,42 +526,42 @@
     margin-bottom: 20px;
     margin-left: 40px;</b>
 }</code></pre></td>
-                <td style="padding: 10px;"><style>
-                    .red-box4{
-                        background-color: crimson;
-                        color: #fff;
-                        margin-top: 40px;
-                        margin-right: 20px;
-                        margin-bottom: 20px;
-                        margin-left: 40px;
-                    }
-                </style>
-                <h5 class="injected-text">margin</h5>
-                    <div class="box yellow-box1">
-                        <h5 class="box red-box4">padding</h5>
-                    </div></td>
-                </table>
+                    <td style="padding: 10px;"><style>
+                        .red-box4{
+                            background-color: crimson;
+                            color: #fff;
+                            margin-top: 40px;
+                            margin-right: 20px;
+                            margin-bottom: 20px;
+                            margin-left: 40px;
+                        }
+                    </style>
+                    <h5 class="injected-text">margin</h5>
+                        <div class="box yellow-box1">
+                            <h5 class="box red-box4">padding</h5>
+                        </div></td>
+                    </table>
             </div>
 
             <div class="sectionborders">
                 <h2>Add a Negative Margin to an Element</h2>
                     <p>A negative margin will make elements grow larger</p>
                 <table>
-                    <td class="gutter">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14</td>
+                    <td class="gutter" style="text-align: center;">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14</td>
                     <td class="codeformat">
 <pre><code>/*Snippet of previous code*/
 .red-box {
-    background-color: crimson;
-    color: #fff;
-    padding: 20px;
-    <b>margin: -15px;</b>
+background-color: crimson;
+color: #fff;
+padding: 20px;
+<b>margin: -15px;</b>
 }
 
 .blue-box {
-    background-color: blue;
-    color: #fff;
-    padding: 20px;
-    <b>margin: -15px;</b>
+background-color: blue;
+color: #fff;
+padding: 20px;
+<b>margin: -15px;</b>
 }
 </code></pre></td>
                     <td style="padding: 10px;"><style>
@@ -585,9 +589,53 @@
                     <div class="box yellow-box1">
                         <h5 class="box red-box3">padding</h5>
                         <h5 class="box blue-box3">padding</h5></td>
-                    </div>
-                </table>
+                    </table>
             </div>
+        </div>
+
+        <p style="text-align: center; font-weight: bold;">...</p> <!--Missing-->
+
+        <div class="divisionborders"><!--March 30, 2021-->
+            <h4><a id="6">March 30, 2021</a></h4>
+                <div class="sectionborders">
+                    <h2>Use Clockwise Notation to Specify the Padding of an Element</h2>
+                        <p>You specify padding in one line like this </p>
+                        <table>
+                            <td class="gutter" style="text-align: center;">1</td>
+                            <td class="codeformat"><pre><code>padding: 10px 20px 10px 20px;</code></pre></td>
+                        </table>
+                        <p>It's organized by top, right, bottom, and left, and hence Clockwise Notation.</p>
+                </div>
+
+                <div class="sectionborders">
+                    <h2>Use Clockwise Notation to Specify the Margin of an Element</h2>
+                        <p>You specify margin too in the same format as Padding </p>
+                        <table>
+                            <td class="gutter" style="text-align: center;">1</td>
+                            <td class="codeformat"><pre><code>margin: 10px 20px 10px 20px;</code></pre></td>
+                        </table>
+                </div>
+
+                
+                <div class="sectionborders">
+                    <h2>Use Attibute Selectors to Style Elements</h2>
+                        <p>Other ways to style custom group elements is through Attribute selectors</p>
+                        <table>
+                            <td class="gutter" style="text-align: center;">1<br>2<br>3</td>
+                            <td class="codeformat">
+<pre><code>[type='radio'] {
+    margin: 20px 0px 20px 0px;
+}</code></pre></td>
+                        </table>
+                        <p>An attribute selector (<code>[attr=value]</code>) matches and styles
+                        elements that have a specific attribute value. <br>
+                        For example in the code above, it will find elements that have the attribute <code>[type='radio']</code> and give it the custom margins.
+                        </p>
+                </div>
+
+                <div class="sectionborders">
+                    <h2>Understand Absolute versus Relative Units</h2>
+                </div>
         </div>
     </body>
     <footer>
