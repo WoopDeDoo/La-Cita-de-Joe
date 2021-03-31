@@ -46,3 +46,61 @@ table {
     text-align: left;
     background: rgb(170, 170, 170);
 }
+
+.container { 
+    height: 20px;
+    position: relative;
+    padding: 10px
+  }
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/*spaghetti code for adjusting magins of an element*/
+.injected-text1 {
+    position:fixed;
+    text-align: center;
+}
+.red-box2 {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+    margin: 30px;
+}
+
+.red-box3 {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+    margin: -15px;
+}
+
+.red-box4{
+    background-color: crimson;
+    color: #fff;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+
+
+.blue-box2 {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+    margin: 30px;
+}
+
+.blue-box3 {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+    margin: -15px;
+}
