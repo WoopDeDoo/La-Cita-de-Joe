@@ -127,7 +127,15 @@ function disco() {
 }
 
 function discotoggle () {
+    var button = document.getElementById("discorename")
     toggle = !toggle;
-    console.log(toggle);
+
+    if (toggle === true){
+        button.innerHTML = 'TURN IT OFF!'
+    }
+    
+    if (toggle === false){
+        button.innerHTML = "DISCO!"
+    }
     disco();
 }
