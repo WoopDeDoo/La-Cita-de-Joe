@@ -62,11 +62,12 @@
                         <li>Use Clockwise Notation to Specify the Margin of an Element</li>
                         <li>Use Attribute Selectors to Style Elements</li>
                         <li>Understand Absolute versus Relative Units</li>
+                        <!--Make sure to link to Responsive Web Principles if I get there-->
+                        <li>Style the HTML Body Element</li>
+                        <li>Inherit Styles from the Body Element</li>
                     </ul>
                 <li>TODO</li>
                     <ul>
-                        <li>Style the HTML Body Element</li>
-                        <li>Inherit Styles from the Body Element</li>
                         <li>Prioritize One Style Over Another</li>
                         <li>Prioritize Styles in Subsequent CSS</li>
                         <li>Override Class Declarations by Styling ID Attributes</li>
@@ -453,16 +454,7 @@
     padding-bottom: 20px;
     padding-left: 40px;</b>
 }</code></pre></td>
-                <td style="padding: 10px;"><style>
-                    .red-box4{
-                        background-color: crimson;
-                        color: #fff;
-                        padding-top: 40px;
-                        padding-right: 20px;
-                        padding-bottom: 20px;
-                        padding-left: 40px;
-                    }
-                </style>
+                <td style="padding: 10px;">
                 <h5 class="injected-text">margin</h5>
                     <div class="box yellow-box1">
                         <h5 class="box red-box4">padding</h5>
@@ -492,21 +484,7 @@
     <b>margin: 20px;</b>
 }
 </code></pre></td>
-                        <td style="padding: 10px;"><style>
-                            .red-box2 {
-                                background-color: crimson;
-                                color: #fff;
-                                padding: 20px;
-                                margin: 30px;
-                            }
-                            
-                            .blue-box2 {
-                                background-color: blue;
-                                color: #fff;
-                                padding: 20px;
-                                margin: 30px;
-                            }
-                        </style>
+                        <td style="padding: 10px;">
                         <p style="text-align: center;">With Margins</p>
                         <h5 class="injected-text">margin</h5>
                         <div class="box yellow-box1">
@@ -526,16 +504,7 @@
     margin-bottom: 20px;
     margin-left: 40px;</b>
 }</code></pre></td>
-                    <td style="padding: 10px;"><style>
-                        .red-box4{
-                            background-color: crimson;
-                            color: #fff;
-                            margin-top: 40px;
-                            margin-right: 20px;
-                            margin-bottom: 20px;
-                            margin-left: 40px;
-                        }
-                    </style>
+                    <td style="padding: 10px;">
                     <h5 class="injected-text">margin</h5>
                         <div class="box yellow-box1">
                             <h5 class="box red-box4">padding</h5>
@@ -564,26 +533,7 @@ padding: 20px;
 <b>margin: -15px;</b>
 }
 </code></pre></td>
-                    <td style="padding: 10px;"><style>
-                        .injected-text1 {
-                            position:fixed;
-                            text-align: center;
-                        }
-
-                        .red-box3 {
-                            background-color: crimson;
-                            color: #fff;
-                            padding: 20px;
-                            margin: -15px;
-                        }
-                        
-                        .blue-box3 {
-                            background-color: blue;
-                            color: #fff;
-                            padding: 20px;
-                            margin: -15px;
-                        }
-                    </style>
+                    <td style="padding: 10px;">
                     <p style="text-align: center;">With Negative Margins</p>
                     <h5 class="injected-text1">margin</h5>
                     <div class="box yellow-box1">
@@ -635,8 +585,43 @@ padding: 20px;
 
                 <div class="sectionborders">
                     <h2>Understand Absolute versus Relative Units</h2>
+                        <p>CSS has a lot of other measurements to use however,
+                            the two main types are absolute and relative.<br>
+                            Absolute units like <code>in</code>, <code>mm</code>, and <code>px</code> approximate the actual
+                            measurement on-screen.<br>
+                            Relative unlits like <code>em</code>, <code>rem</code>, and <code>%</code> are relative to another length's value. 
+                            For example, <code>em</code> is based on the size of an element's font. So
+                            if you set a <code>font-size</code> property of a child, it will be relative to
+                            its parent's <code>font-size</code> <br>
+                            Although briefly explained, <b>it will be further covered in Responsive Web Design Principles section.</b>
+                        </p>
                 </div>
+
+                <div class="sectionborders">
+                    <h2>Style the HTML Body Element</h2>
+                        <p>Start of demonstrating CSS inheritance.<br>
+                        This CSS code snippet makes the entire body green.</p>
+                        <table>
+                            <td class="gutter" style="text-align: center;">1<br>2<br>3</td>
+                            <td class="codeformat">
+<pre><code>body {
+    background-color: green;
+}</code></pre></td>
+                            <td><button onclick="bodygreen()">Button</button></td>
+                        </table>
+                </div>
+
+                <div class="sectionborders" id="discotarget"> 
+                    <h2>Inherit Styles from the Body Element</h2>
+                        <p>You can also style the body element and all other elements will inherit
+                            the body's element styles.</p>
+                        <div class="container">
+                        <button id="discoon" onclick="discotoggle()" class="center" style="display: block">DISCO!</button>
+                        <!--<button id="discooff" onclick="discotoggle()" class="center" style="display: none;">NO DISCO!</button> -->
+                        </div>
         </div>
+        </div>
+        <script src="scripts.js"></script> <!--What the heck? I mean it makes sense, but it ruins the structure of my header. JS has to be after body.-->
     </body>
     <footer>
         <h1>
