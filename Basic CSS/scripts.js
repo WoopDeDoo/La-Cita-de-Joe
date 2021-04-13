@@ -1,14 +1,23 @@
 //Style the HTML Body Element
 function bodygreen() {
-    var toggle = document.body;
-    if (toggle.style.backgroundColor === "white") {
-        toggle.style.backgroundColor = "green";
+    var bodygreenvar = document.body;
+    if (bodygreenvar.style.backgroundColor === "green") {
+        bodygreenvar.style.backgroundColor = "white";
     } else {
-        toggle.style.backgroundColor = "white";
+        bodygreenvar.style.backgroundColor = "green";
     }
 }
 
 // For Inherit Styles from the Body Element
+r=255;
+g=255;
+b=255;
+flag=0;
+t=new Array;
+o=new Array;
+d=new Array;
+toggle = false;
+
 function hex(a,c) {
     t[a]=Math.floor(c/16)
     o[a]=c%16
@@ -88,44 +97,41 @@ function do_it(a,c) {
 }
 
 function disco() {
-    var toggle = toggleval()
+    var variable = document.body;
     if (flag==0) {
         r=ran(1, r);
         g=ran(2, g);
         b=ran(3, b);
-        hex(1,r)
-        hex(2,g)
-        hex(3,b)
-        color="#"+t[1]+o[1]+t[2]+o[2]+t[3]+o[3]
-        flag=50
+        hex(1,r);
+        hex(2,g);
+        hex(3,b);
+        variable.style.backgroundColor="#"+t[1]+o[1]+t[2]+o[2]+t[3]+o[3];
+        flag=50;
+    } 
+
+    if (toggle == false){
+        variable.style.backgroundColor="#FFFFFF"
+        return 
+        
     } else {
-        r=do_it(1, r)
-        g=do_it(2,g)
-        b=do_it(3,b)
-        hex(1,r)
-        hex(2,g)
-        hex(3,b)
-        color="#"+t[1]+o[1]+t[2]+o[2]+t[3]+o[3]
-        flag--
+        r=do_it(1, r);
+        g=do_it(2,g);
+        b=do_it(3,b);
+        hex(1,r);
+        hex(2,g);
+        hex(3,b);
+        variable.style.backgroundColor="#"+t[1]+o[1]+t[2]+o[2]+t[3]+o[3];
+        flag--;
     }
-    return this.color;
+    setTimeout('disco()',10);
 }
 
-function toggle(toggleval) {
-    
+function discotoggle () {
+    toggle = !toggle;
+    console.log(toggle);
+    disco();
 }
 
-function discocolors() {
-    var variable = document.getElementById("discotarget").style.backgroundColor;
-    r=255;
-    g=255;
-    b=255;
-    flag=0;
-    t=new Array;
-    o=new Array;
-    d=new Array;
-    variable = set(disco(), 1000);
-} 
 /*<!-- this script got from www.htmlbestcodes.com - Coded by: Krishna Eydat
 <body onload="disco()">
 <script language="JavaScript">
