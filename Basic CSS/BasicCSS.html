@@ -522,17 +522,17 @@
                     <td class="codeformat">
 <pre><code>/*Snippet of previous code*/
 .red-box {
-background-color: crimson;
-color: #fff;
-padding: 20px;
-<b>margin: -15px;</b>
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+    <b>margin: -15px;</b>
 }
 
 .blue-box {
-background-color: blue;
-color: #fff;
-padding: 20px;
-<b>margin: -15px;</b>
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+    <b>margin: -15px;</b>
 }
 </code></pre></td>
                     <td style="padding: 10px;">
@@ -616,7 +616,9 @@ padding: 20px;
                 <div class="sectionborders"> 
                     <h2>Inherit Styles from the Body Element</h2>
                         <p>You can also style the body element and all other elements will inherit
-                            the body's element styles.</p>
+                            the body's element styles. <br>
+                        i.e in CSS, assign a color green to body and any element without a color 
+                        would become green.</p>
                         <div class="container">
                         <button id="discorename" onclick="discotoggle()" class="center" style="display: block;">DISCO!</button>
                         </div>
@@ -625,8 +627,14 @@ padding: 20px;
 
         <p style="text-align: center; font-weight: bold;">...</p> <!--Missing-->
 
-        <div class="divisionborders"><!--March 30, 2021-->
+        <div class="divisionborders"><!--April 13, 2021-->
             <h4><a id="7">April 13, 2021</a></h4>
+                <div class="sectionborders">
+                    <h2>Prioritize One Style Over Another</h2>
+                    <p>Class assignments (<code>.classname {code here}</code>) overrides
+                    body assignment.</p>
+                    <img src="https://i.imgur.com/JYyydsd.png" style="display: block; margin: auto;" />
+                </div>
         </div>
         <script src="scripts.js"></script> <!--What the heck? I mean it makes sense, but it ruins the structure of my header. JS has to be after body.-->
     </body>
