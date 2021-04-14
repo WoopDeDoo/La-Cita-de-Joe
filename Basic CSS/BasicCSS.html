@@ -68,27 +68,33 @@
                     </ul>
                 <p><b>...</b></p>
                 <li><a href="#7">April 13, 2021</a></li>
+                <ul>
+                    <li>Prioritize One Style Over Another</li>
+                </ul>
+                <li><a href="#8">April 14, 2021</a></li>
+                <ul>
+                    <li>Override Styles in Subsequent CSS</li>
+                    <li>Override Styles in Subsequent CSS</li>
+                    <li>Override Class Declarations by Styling ID Attributes</li>
+                    <li>Override Class Declarations with Inline Styles</li>
+                    <li>Override All Other Styles by using Important</li>
+                    <li>Use Hex Code for Specific Colors</li>
+                    <li>Use Hex Code to Mix Colors</li>
+                    <li>Use Abbreviated Hex Code</li>
+                    <li>Use RGB values to Color Elements</li>
+                    <li><i>Use RGB to Mix Colors</i></li>
+                    <li>Use CSS Variables to change several elements at once</li>
+                    <li>Create a custom CSS Variable</li>
+                    <li>Use a custom CSS Variable</li>
+                    <li>Attach a Fallback value to a CSS Variable</li>
+                    <li>Improve Compatibility with Browser Fallbacks</li>
+                    <li>Inherit CSS Variables</li>
+                    <li>Change a variable for a specific area</li>
+                    <li>Use a media query to change a variable.</li>
+                </ul>
                 <li>TODO</li>
                     <ul>
-                        <li>Prioritize One Style Over Another</li>
-                        <li>Prioritize Styles in Subsequent CSS</li>
-                        <li>Override Class Declarations by Styling ID Attributes</li>
-                        <li>Override Class Declarations with Inline Styles</li>
-                        <li>Override All Other Styles by using Important</li>
-                        <li>Use Hex Code for Specific Colors</li>
-                        <li>Use Hex Code to Mix Colors</li>
-                        <li>Use Abbreviated Hex Code</li>
-                        <li>Use RGB values to Color Elements</li>
-                        <li>Use RGB to Mix Colors</li>
-                        <li>Use CSS Variables to change several elements at once</li>
-                        <li>Create a custom CSS Variable</li>
-                        <li>Use a custom CSS Variable</li>
-                        <li>Attach a Fallback value to a CSS Variable</li>
-                        <li>Improve Compatibility with Browser Fallbacks</li>
-                        <li>Inherit CSS Variables</li>
-                        <li>Change a variable for a specific area</li>
-                        <li>Use a media query to change a variable.</li>
-                            
+                        <li>Nothing! :)</li>
                     </ul>
                 </ol></ul>
         </div>
@@ -635,8 +641,224 @@
                     body assignment.</p>
                     <img src="https://i.imgur.com/JYyydsd.png" class="divisionborders" style="display: block; margin: auto;">
                     <br>
+                    <p>This chart shows the style priority in place that overrides a style based on specificity.
+                        This shows why class assignments overrides the body (element).
+                    </p>
                 </div>
         </div>
+
+        <div class="divisionborders"><!--April 14, 2021-->
+            <h4><a id="8">April 14, 2021</a></h4>
+                <div class="sectionborders">
+                    <h2>Override Styles in Subsequent CSS</h2>
+                    <p>The second declaration takes precedence over the first. <br>
+                        <table>
+                            <td class="gutter" style="text-align: center;">1</td>
+                            <td class="codeformat"><pre><code>&lt;h1 class="losingclass winningclass">Test&lt;/h1></code></pre></td>
+                        </table>
+                    <p>Simply, winningclass's style will be used instead of losingclass.</p>
+                </div>
+
+                <div class="sectionborders">
+                    <h2>Override Class Declarations by Styling ID Attributes</h2>
+                    <p>ID's override classes</p>
+                    <table>
+                        <td class="gutter" style="text-align: center;">1</td>
+                        <td class="codeformat"><pre><code>&lt;h1 class="losingclass" id="winningid">Test&lt;/h1></code></pre></td>
+                    </table>
+                <p>winningid's style will be used instead of losingclass.</p>
+                </div>
+
+                <div class="sectionborders">
+                    <h2>Override Class Declarations with Inline Styles</h2>
+                    <p>Inline Styles (Style Attributes) overrides class declarations & ids.</p>
+                    <table>
+                        <td class="gutter" style="text-align: center;">1</td>
+                        <td class="codeformat"><pre><code>&lt;h1 style="color: white;" class="losingclass" id="losingid">Test&lt;/h1></code></pre></td>
+                    </table>
+                <p>The inline style (white) will be used instead of losingclass & losingid.</p>
+                </div>
+                
+                <div class="sectionborders">
+                    <h2>Override All Other Styles by using Important</h2>
+                    <p><code>!important</code> overrides all other styles</p>
+                    <table>
+                        <td class="gutter" style="text-align: center;">1<br>2<br>3<br>4</td>
+                        <td class="codeformat">
+<pre><code>/*Inside .cs file*/
+.notlosingclass {
+    color: #000000 !important;
+}</code></pre></td>
+                    </table>
+                    <table>
+                        <td class="gutter" style="text-align: center;">1<br>2<br>3</td>
+                        <td class="codeformat">
+<pre><code>&lt;!-- Inside .html file-->
+&lt;h1 style="color: white;" class="notlosingclass" id="losingid">Test&lt;/h1>
+&lt;!--Make sure to reference the .cs file for this to work--></code></pre></td>
+                    </table>
+                <p>Due to !important, notlosingclass's style will be used despite it having the lower specificity (class).<br>
+                "In many situations, you will use CSS libraries. These may accidentally 
+                override your own CSS. So when you absolutely need to be sure that an element
+                specific CSS, you can use <code>!important</code>." - freecodecamp</p>
+                </div>
+
+                <div class="sectionborders">
+                    <h2>Use Hex Code for Specific Colors</h2>
+                    <p>You can represent colors using hexadecimal code a.k.a. hex code.<br>
+                    As you may know, hexadecimal code use base 16 (0-9, A-F)<br>
+                    For example, black can also be represented as #000000</p>
+                </div>
+
+                
+                <div class="sectionborders">
+                    <h2>Use Hex Code to Mix Colors</h2>
+                    <p>Hex codes use 6 hexadecimal digits 2 red, 2 green, and 2 blue.<br>
+                    (<code>#1E90FF</code>)<br>
+                    Mixing these colors could create over 16 million colors.<br>
+                    0 is the complete absence of color and F is the maximum possible brightness</p>
+                </div>
+
+                <div class="sectionborders">
+                    <h2>Use Abbreviated Hex Code</h2>
+                    <p>You can shorten hex codes to 3 digits: <code>#F1C</code>, reducing the 
+                    number of colors to 4,000.</p>
+                </div>
+
+                <div class="sectionborders">
+                    <h2>Use RGB values to Color Elements</h2>
+                    <p>You can use rgb values to represent colors</p>
+                    <table>
+                        <td class="gutter" style="text-align: center;">1</td>
+                        <td class="codeformat"><pre><code>background-color: rgb(0, 0, 0)</code></pre></td>
+                    </table>
+                    <p>It's similar to 3 letter hex codes.</p>
+                </div>
+
+                <div class="sectionborders">
+                    <h2>Use CSS Variables to change several elements at once</h2>
+                    <p>Intro to using CSS variables. However, example just changes colors of multiple elements.</p>
+                </div>
+
+                
+                <div class="sectionborders">
+                    <h2>Create a custom CSS Variable</h2>
+                    Sample CSS variable
+                    <table>
+                        <td class="gutter" style="text-align: center;">1</td>
+                        <td class="codeformat"><pre><code>--example-variable: gray;</code></pre></td>
+                    </table>
+                </div>
+
+                <div class="sectionborders">
+                    <h2>Use a custom CSS Variable</h2>
+                    <p>Sample variable usage</p>
+                    <table>
+                        <td class="gutter" style="text-align: center;">1</td>
+                        <td class="codeformat"><pre><code>background-color: var(--example-variable);</code></pre></td>
+                    </table>
+                    <p>Referencing the variable above will give elements the value of that variable, which is gray.</p>
+                </div>
+
+                <div class="sectionborders">
+                    <h2>Attach a Fallback value to a CSS Variable</h2>
+                    <p>Similar to degrading text, you should have a fallback variable if a browser
+                    can't reference a variable.<br>
+                    "This fallback is not used to increase browser 
+                    compatibility, and it will not work on IE browsers. Rather, it is used so that the 
+                    browser has a color to display if it cannot find your variable." -freecodecamp
+                    </p>
+                    <table>
+                        <td class="gutter" style="text-align: center;">1</td>
+                        <td class="codeformat"><pre><code>background-color: var(--example-variable, fallbackcolor);</code></pre></td>
+                    </table>
+                </div>
+
+                <div class="sectionborders">
+                    <h2>Improve Compatibility with Browser Fallbacks</h2>
+                    <p>In order to compensate for browser compatibility issues, you should
+                        implement fallbacks. <br>
+                        For example, "Internet Explorer will ignore the 
+                        background color because it does not support CSS variables...it will 
+                        revert to the default value, which is typically not ideal" -freecodecamp.<br>
+                        So an easy way to compensate for this is to implement other values before variables.
+                    </p>
+                    <table>
+                        <td class="gutter" style="text-align: center;">1<br>2<br>3<br>4<br>5</td>
+                        <td class="codeformat">
+<pre><code>.red-box {
+    --example-variable: red;
+    background: red;/*This is what you should do*/
+    background: var(--example-variable);
+}
+</code></pre></td>
+                    </table>
+                </div>
+
+                <div class="sectionborders">
+                    <h2>Inherit CSS Variables</h2>
+                    <p>Creating a variable only allows it to be used within a selector (container) and its descendents.
+                        To create global variables, make use of the <code>:root</code> element.
+                    </p>
+                    <table>
+                        <td class="gutter" style="text-align: center;">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8</td>
+                        <td class="codeformat">
+<pre><code>root: {
+    --example-variable: red;/*This is root*/
+}
+
+.red-box {
+    background: red;
+    background: var(--example-variable);
+}</code></pre></td>
+                    </table>
+                    <p>"<code>:root</code> is a <i>pseudo-class</i> selector that matches the root element
+                    of the document, usually the <code>html</code> element...they will be available globally
+                    and can be accessed from any other selector"-freecodecamp</p>
+                </div>
+
+                <div class="sectionborders">
+                    <h2>Change a variable for a specific area</h2>
+                    <p>You can change a color of a selector by reassigning variables within a class.
+                        As such you can create flexible variables.
+                    </p>
+                    <table>
+                        <td class="gutter" style="text-align: center;">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8</td>
+                        <td class="codeformat">
+<pre><code>root: {
+    --example-variable: red;/*example-variable is red*/
+}
+
+.red-box {
+    background: var(--example-variable);/*red box*/
+    --example-variable: blue;/*example-variable is blue*/
+}
+.blue-box {
+    background: var(--example-variable);/*blue box*/
+}</code></pre></td>
+                    </table>
+                </div>
+
+                <div class="sectionborders">
+                    <h2>Use a media query to change a variable</h2>
+                    <p>Media query allows content to adapt to different conditions i.e. screen resolution.<br>
+                    Sample usage of a media query</p>
+                    <table>
+                        <td class="gutter" style="text-align: center;">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</td>
+                        <td class="codeformat">
+<pre><code>root: {
+    --example-variable: red;
+}
+
+@media (max-width: 350px) {/*if screen condition is met then*/
+    :root {
+        --example-variable:green;
+    }
+}</code></pre></td>
+                    </table>
+                </div>
+        </div>
+        
         <script src="scripts.js"></script> <!--What the heck? I mean it makes sense, but it ruins the structure of my header. JS has to be after body.-->
     </body>
     <footer>
