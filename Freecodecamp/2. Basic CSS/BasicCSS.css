@@ -1,0 +1,106 @@
+/* For BasicCSS.html */
+.divisionborders {
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.sectionborders {
+    border-color: black;
+    border-style: dotted;
+    border-width: 2px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+pre code {
+    display: block;
+    background: none;
+    white-space: pre-wrap;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    max-width: 100%;
+    min-width: 100px;
+    padding: 0;
+    font-family: Consolas;
+    font-size: medium;
+    text-align: left;
+  }
+
+table {
+    padding-bottom: 5px;
+}
+
+.codeformat {
+    background-color: rgb(243, 243, 243);
+    padding-right: 10px;
+}
+
+.gutter {
+    font-family: Consolas;
+    font-style: bold;
+    font-size: medium;
+    text-align: left;
+    background: rgb(170, 170, 170);
+}
+
+.container { 
+    height: 20px;
+    position: relative;
+    padding: 10px
+  }
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/*spaghetti code for adjusting magins of an element*/
+.injected-text1 {
+    position:fixed;
+    text-align: center;
+}
+.red-box2 {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+    margin: 30px;
+}
+
+.red-box3 {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+    margin: -15px;
+}
+
+.red-box4{
+    background-color: crimson;
+    color: #fff;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+
+
+.blue-box2 {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+    margin: 30px;
+}
+
+.blue-box3 {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+    margin: -15px;
+}
